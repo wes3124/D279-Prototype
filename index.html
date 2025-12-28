@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pet Consultation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a class="logo" href="index.html"><img src="assets/images/logo.svg" alt="Paradigm Pet Professional" class="site-logo">Paradigm Pet Professional</a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a class="nav-link" href="dog-owners.html">Dogs</a>
+                <a class="nav-link" href="cat-owners.html">Cats</a>
+                <a class="nav-link" href="bird-owners.html">Birds</a>
+                <a class="nav-link" href="consultation-form.html">Consultation</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="subnav" aria-label="Secondary navigation">
+        <div class="container subnav-inner">
+            <button class="subnav-toggle" aria-expanded="false" aria-controls="subnav-list">Menu</button>
+            <div id="subnav-list" class="subnav-list">
+                <a class="subnav-link" data-anchor="services" href="#services">Services</a>
+                <a class="subnav-link" data-anchor="testimonials" href="#testimonials">Testimonials</a>
+                <a class="subnav-link" data-anchor="team" href="#team">Team</a>
+                <a class="subnav-link" data-anchor="pricing" href="#pricing">Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero--dark" id="main-content" role="main">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <h1>Evidence-Based Pet Care You Can Trust</h1>
+                    <p class="hero-subtitle">At Paradigm Pet Professionals, we provide expert guidance and personalized consultations for dogs, cats, and birds. Our evidence-based approach ensures your pets receive the best care possible.</p>
+                    <div class="hero-actions">
+                        <a href="consultation-form.html" class="btn btn-primary">Request a Consultation</a>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-illustration" style="background-image: url('assets/images/hero.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose Your Pet Type -->
+    <section class="pet-type-selection">
+        <div class="container">
+            <h2>Choose Your Pet Type</h2>
+            <div class="pet-type-grid">
+                <div class="pet-type-card">
+                    <img src="assets/images/dog.jpg" alt="Dog" class="pet-card-img">
+                    <h3>Dog Owners</h3>
+                    <p>Comprehensive care and training advice for your canine companions.</p>
+                    <a href="dog-owners.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="pet-type-card">
+                    <img src="assets/images/cat.jpg" alt="Cat" class="pet-card-img">
+                    <h3>Cat Owners</h3>
+                    <p>Expert guidance for your feline friends' health and wellbeing.</p>
+                    <a href="cat-owners.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="pet-type-card">
+                    <img src="assets/images/bird.jpg" alt="Bird" class="pet-card-img">
+                    <h3>Bird Owners</h3>
+                    <p>Understanding emotional needs of avian pets</p>
+                    <a href="bird-owners.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img class="service-img" src="assets/images/service-vet.jpg" alt="Veterinary consultation with dog">
+                    <h3>Veterinary Consultations</h3>
+                    <p>Virtual and in-person consultations with licensed veterinarians for diagnostics and care plans.</p>
+                </div>
+                <div class="service-card">
+                    <img class="service-img" src="assets/images/service-training.jpg" alt="Dog training session">
+                    <h3>Training & Behavior</h3>
+                    <p>Customized training plans and behavioral support for dogs and cats to improve quality of life.</p>
+                </div>
+                <div class="service-card">
+                    <img class="service-img" src="assets/images/service-nutrition.jpg" alt="Pet nutrition and food planning">
+                    <h3>Nutrition Planning</h3>
+                    <p>Personalized nutrition and feeding recommendations for every life stage and condition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="meta">
+                        <img class="avatar" src="assets/images/avatar1.jpg" alt="Client avatar">
+                        <div>
+                            <strong>Alex P.</strong>
+                            <div class="role">Dog owner</div>
+                        </div>
+                    </div>
+                    <p>Excellent care — the team helped my dog through a tricky health issue and were so supportive.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="meta">
+                        <img class="avatar" src="assets/images/avatar2.jpg" alt="Client avatar">
+                        <div>
+                            <strong>Sara L.</strong>
+                            <div class="role">Cat owner</div>
+                        </div>
+                    </div>
+                    <p>Professional and caring — great recommendations and follow-up. Our cat is happier and healthier.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="meta">
+                        <img class="avatar" src="assets/images/avatar3.jpg" alt="Client avatar">
+                        <div>
+                            <strong>Jordan K.</strong>
+                            <div class="role">Pet parent</div>
+                        </div>
+                    </div>
+                    <p>Fast responses and very helpful care plans that were easy to follow — highly recommend.</p>
+                </div>
+            </div>
+        </div>
+    <!-- Team -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="assets/images/alex-parker.jpg" alt="Alex - Veterinarian">
+                    <h4>Alex Parker</h4>
+                    <p>Lead Veterinarian</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/sara-lee.jpg" alt="Sara - Nutritionist">
+                    <h4>Sara Lee</h4>
+                    <p>Nutrition Specialist</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/jordan-kim.jpg" alt="Jordan - Trainer">
+                    <h4>Jordan Kim</h4>
+                    <p>Behavioral Trainer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Pricing</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Basic</h3>
+                    <div class="price">$49</div>
+                    <p>One-off consultation</p>
+                </div>
+                <div class="price-card">
+                    <h3>Standard</h3>
+                    <div class="price">$129</div>
+                    <p>Consultation + 2 follow-ups</p>
+                </div>
+                <div class="price-card">
+                    <h3>Premium</h3>
+                    <div class="price">$249</div>
+                    <p>Full care plan + priority support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <details>
+                <summary>How do virtual consultations work?</summary>
+                <p>We connect via video call, review your pet's history, and provide a care plan or next steps.</p>
+            </details>
+            <details>
+                <summary>Do you provide in-person visits?</summary>
+                <p>We partner with local clinics for in-person services when needed.</p>
+            </details>
+            <details>
+                <summary>What payment methods do you accept?</summary>
+                <p>We accept major credit cards and online payment options.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">Paradigm Pet Professional</a>
+                <p class="legal">© 2025 Paradigm Pet Professional. All rights reserved.</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p class="contact-line">Email: hello@paradigmpetprofessional.example</p>
+                <p class="contact-line">Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

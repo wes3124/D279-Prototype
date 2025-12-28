@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Consultations - Pet Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a class="logo" href="index.html"><img src="assets/images/logo.svg" alt="Paradigm Pet Professional" class="site-logo">Paradigm Pet Professional</a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a class="nav-link" href="dog-owners.html">Dogs</a>
+                <a class="nav-link" href="cat-owners.html">Cats</a>
+                <a class="nav-link" href="bird-owners.html">Birds</a>
+                <a class="nav-link" href="consultation-form.html">Consultation</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="subnav" aria-label="Secondary navigation">
+        <div class="container subnav-inner">
+            <button class="subnav-toggle" aria-expanded="false" aria-controls="subnav-list">Menu</button>
+            <div id="subnav-list" class="subnav-list">
+                <a class="subnav-link" data-anchor="services" href="#">Services</a>
+                <a class="subnav-link" data-anchor="testimonials" href="#">Testimonials</a>
+                <a class="subnav-link" data-anchor="team" href="#">Team</a>
+                <a class="subnav-link" data-anchor="pricing" href="#">Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Anchor placeholders for site-wide subnav -->
+    <div id="services" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+    <div id="testimonials" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+    <div id="team" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+    <div id="pricing" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+
+    <section class="hero" id="main-content" role="main">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <h1>Virtual Consultations</h1>
+                    <p class="hero-subtitle">Schedule a personalized consultation with our pet care experts</p>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-illustration" style="background-image: url('./assets/images/hero.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Consultations Section -->
+    <section class="consultation-form-section">
+        <div class="container">
+
+            <form id="consultation-form" class="consultation-form" action="#" method="POST">
+                <h2 class="text-2xl mb-6" style="color:var(--brand-dark);">Owner Information</h2>
+
+                <div class="form-group">
+                    <label for="ownerName">Full Name *</label>
+                    <input type="text" id="ownerName" name="ownerName" required placeholder="Your full name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="timezone">Time Zone *</label>
+                    <select id="timezone" name="timezone" required>
+                        <option value="">Select your time zone</option>
+                        <option value="EST">Eastern Time (EST)</option>
+                        <option value="CST">Central Time (CST)</option>
+                        <option value="MST">Mountain Time (MST)</option>
+                        <option value="PST">Pacific Time (PST)</option>
+                        <option value="AKST">Alaska Time (AKST)</option>
+                        <option value="HST">Hawaii Time (HST)</option>
+                    </select>
+                </div>
+
+                <h2 class="text-2xl mt-8 mb-6" style="color:var(--brand-dark);">Pet Information</h2>
+
+                <div class="form-group">
+                    <label for="petName">Pet's Name *</label>
+                    <input type="text" id="petName" name="petName" required placeholder="Your pet's name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="petType">Pet Type *</label>
+                    <select id="petType" name="petType" required>
+                        <option value="">Select pet type</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Bird</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="petAge">Pet's Age *</label>
+                    <input type="text" id="petAge" name="petAge" required placeholder="e.g., 3 years, 6 months" />
+                </div>
+
+                <div class="mt-8">
+                    <button type="submit" class="btn" style="width:100%;">Submit Consultation Request</button>
+                </div>
+
+                <p class="mt-4 text-sm" style="color:var(--muted);">* Required fields. We respect your privacy and will never share your information.</p>
+            </form>
+
+            <!-- Thank you panel (hidden until submit) -->
+            <div id="thankyou-panel" style="display:none; margin-top:1rem;">
+                <div class="bg-white rounded-lg p-12 shadow-lg text-center">
+                    <div style="width:80px;height:80px;border-radius:999px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;background:var(--primary);">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    </div>
+                    <h2 class="text-3xl mb-4" style="color:var(--brand-dark);">Thank You for Your Consultation Request!</h2>
+                    <p class="mb-6" style="color:var(--muted);">We've received your information and one of our pet care specialists will contact you within 1-2 business days to schedule your consultation.</p>
+                    <p class="mb-6" style="color:var(--muted);">Please check your email (<span id="ty-email"></span>) for confirmation details.</p>
+                    <button id="submit-again" class="btn" style="background-color:var(--cta);">Submit Another Request</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div>
+                    <a class="logo" href="index.html">Paradigm Pet Professional</a>
+                    <p class="legal" style="margin-top:0.5rem;">© 2025 Paradigm Pet Professional. All rights reserved.</p>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p style="margin:0.25rem 0;">Email: hello@paradigmpetprofessional.example</p>
+                    <p style="margin:0.25rem 0;">Phone: (555) 123-4567</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+        // Simple client-side form handler to show a thank-you panel without backend
+        (function(){
+            const form = document.getElementById('consultation-form');
+            const panel = document.getElementById('thankyou-panel');
+            const emailSpan = document.getElementById('ty-email');
+            const againBtn = document.getElementById('submit-again');
+
+            if (!form) return;
+
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                const data = new FormData(form);
+                const email = data.get('email') || '';
+                if (emailSpan) emailSpan.textContent = email;
+                form.style.display = 'none';
+                if (panel) panel.style.display = 'block';
+            });
+
+            if (againBtn) {
+                againBtn.addEventListener('click', function(){
+                    form.reset();
+                    form.style.display = '';
+                    panel.style.display = 'none';
+                });
+            }
+        })();
+        </script>
+        <script src="script.js"></script>
+</body>
+</html>

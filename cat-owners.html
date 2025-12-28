@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Owners - Pet Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a class="logo" href="index.html"><img src="assets/images/logo.svg" alt="Paradigm Pet Professional" class="site-logo">Paradigm Pet Professional</a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a class="nav-link" href="dog-owners.html">Dogs</a>
+                <a class="nav-link" href="cat-owners.html">Cats</a>
+                <a class="nav-link" href="bird-owners.html">Birds</a>
+                <a class="nav-link" href="consultation-form.html">Consultation</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="subnav" aria-label="Secondary navigation">
+        <div class="container subnav-inner">
+            <button class="subnav-toggle" aria-expanded="false" aria-controls="subnav-list">Menu</button>
+            <div id="subnav-list" class="subnav-list">
+                <a class="subnav-link" data-anchor="services" href="#">Services</a>
+                <a class="subnav-link" data-anchor="testimonials" href="#">Testimonials</a>
+                <a class="subnav-link" data-anchor="team" href="#">Team</a>
+                <a class="subnav-link" data-anchor="pricing" href="#">Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Anchor placeholders for site-wide subnav -->
+    <div id="services" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+    <div id="testimonials" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+    <div id="team" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+    <div id="pricing" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+
+    <section class="hero" id="main-content" role="main">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <h1>Cat Owner Resources</h1>
+                    <p class="hero-subtitle">Cats have unique nutritional and care needs that change throughout their lives. Understanding these life stages helps you provide optimal care for your feline companion.</p>
+                    <div class="hero-actions">
+                        <a href="consultation-form.html" class="btn">Schedule Consultation</a>
+                    </div>
+                </div>
+                    <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-illustration" style="background-image: url('assets/images/cat.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cat Owners Content -->
+    <section class="pet-owners-content">
+        <div class="container">
+            <img src="assets/images/cat.jpg" alt="Content cat" class="content-image">
+
+            <div class="content-section bg-white rounded-lg p-8 shadow-lg">
+                <h2>Zero to Four Weeks</h2>
+                <p>Newborn kittens are entirely dependent on their mother. This is a critical period for development and bonding.</p>
+                <h3>Feeding Guidelines:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Mother's milk is essential - provides all necessary nutrients and antibodies</li>
+                    <li>If orphaned, use kitten milk replacer (never cow's milk)</li>
+                    <li>Feed every 2-3 hours around the clock</li>
+                    <li>Kittens should gain weight steadily (approximately 10-15g per day)</li>
+                    <li>Keep kittens warm, as they cannot regulate body temperature yet</li>
+                </ul>
+                <h3>Important Care Notes:</h3>
+                <ul class="list-disc ml-6 mb-4">
+                    <li>Monitor for signs of illness: lethargy, poor appetite, or crying</li>
+                    <li>Mother cat will stimulate elimination - if bottle-feeding, you'll need to do this</li>
+                    <li>Minimize handling to reduce stress</li>
+                    <li>Ensure clean, warm, and quiet environment</li>
+                </ul>
+            </div>
+
+            <div class="content-section bg-white rounded-lg p-8 shadow-lg">
+                <h2>Four Weeks to One Year</h2>
+                <p>The kitten stage is marked by rapid growth, socialization, and learning. This is when personality develops and habits are formed.</p>
+                <h3>Feeding Guidelines:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Begin weaning at 4 weeks - introduce wet kitten food mixed with milk replacer</li>
+                    <li>By 8 weeks, kittens should eat solid food independently</li>
+                    <li>Feed kitten-specific formula (higher in protein and calories than adult food)</li>
+                    <li>Provide 3-4 small meals daily until 6 months old</li>
+                    <li>Always have fresh water available</li>
+                    <li>Avoid milk, as most cats are lactose intolerant</li>
+                </ul>
+                <h3>Developmental Milestones:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Litter training typically begins around 4 weeks</li>
+                    <li>Socialization period: 2-7 weeks (crucial for handling and exposure)</li>
+                    <li>First veterinary visit and vaccinations: 6-8 weeks</li>
+                    <li>Spay/neuter recommended at 5-6 months</li>
+                    <li>Introduce toys for mental and physical stimulation</li>
+                </ul>
+            </div>
+
+            <div class="content-section bg-white rounded-lg p-8 shadow-lg">
+                <h2>One Year to Seven Years</h2>
+                <p>Adult cats are in their prime - active, healthy, and full of personality. Maintaining good habits now sets the foundation for a long, healthy life.</p>
+                <h3>Feeding Guidelines:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Transition to adult cat food (lower calorie than kitten formula)</li>
+                    <li>Feed 2 meals daily at consistent times</li>
+                    <li>Monitor portion sizes to prevent obesity</li>
+                    <li>Choose high-quality food with real meat as the first ingredient</li>
+                    <li>Consider wet food to increase hydration</li>
+                    <li>Maintain fresh water supply - consider a cat water fountain</li>
+                </ul>
+                <h3>Health & Wellness:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Annual veterinary checkups and vaccinations</li>
+                    <li>Dental care: brush teeth regularly or provide dental treats</li>
+                    <li>Provide scratching posts and climbing structures</li>
+                    <li>Interactive play sessions daily (15-30 minutes)</li>
+                    <li>Maintain litter box cleanliness (scoop daily)</li>
+                    <li>Monitor for changes in behavior, appetite, or litter box habits</li>
+                </ul>
+            </div>
+
+            <div class="content-section bg-white rounded-lg p-8 shadow-lg">
+                <h2>Seven Years and More</h2>
+                <p>Senior cats require extra attention and care as they age. With proper management, cats can live comfortably well into their teens and twenties.</p>
+                <h3>Feeding Guidelines:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Consider senior cat food formulas (easier to digest, joint support)</li>
+                    <li>Maintain ideal body weight - obesity shortens lifespan</li>
+                    <li>Smaller, more frequent meals may be easier to digest</li>
+                    <li>Ensure easy access to food and water bowls</li>
+                    <li>Warm wet food slightly to enhance aroma and appeal</li>
+                    <li>Adjust diet based on health conditions (kidney disease, diabetes, etc.)</li>
+                </ul>
+                <h3>Senior Care Essentials:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Increase veterinary visits to twice yearly</li>
+                    <li>Monitor for signs of arthritis, kidney disease, or hyperthyroidism</li>
+                    <li>Provide soft, easily accessible sleeping areas</li>
+                    <li>Lower litter box sides for easy entry</li>
+                    <li>Maintain gentle play and interaction</li>
+                    <li>Keep environment consistent to reduce stress</li>
+                    <li>Monitor water intake - increased drinking may indicate health issues</li>
+                </ul>
+                <p><strong>Remember:</strong> Senior cats are masters at hiding pain and illness. Regular veterinary care and close observation are essential for catching problems early.</p>
+            </div>
+
+            <section class="rounded-lg p-8 cta-section" style="background-color:var(--brand-dark); color:#fff; margin-top:1.5rem;">
+                <h2 class="text-3xl mb-4">Questions About Your Cat's Life Stage?</h2>
+                <p style="color:var(--muted-light);">Our feline care specialists can help you navigate your cat's unique needs at every stage of life. From kitten care to senior wellness, we're here to support you.</p>
+                <a href="consultation-form.html" class="btn" role="button" style="display:inline-block; margin-top:0.75rem;">Schedule a Consultation</a>
+            </section>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">Paradigm Pet Professional</a>
+                <p class="legal">© 2025 Paradigm Pet Professional. All rights reserved.</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p class="contact-line">Email: hello@paradigmpetprofessional.example</p>
+                <p class="contact-line">Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

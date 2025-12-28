@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Owners - Pet Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a class="logo" href="index.html"><img src="assets/images/logo.svg" alt="Paradigm Pet Professional" class="site-logo">Paradigm Pet Professional</a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a class="nav-link" href="dog-owners.html">Dogs</a>
+                <a class="nav-link" href="cat-owners.html">Cats</a>
+                <a class="nav-link" href="bird-owners.html">Birds</a>
+                <a class="nav-link" href="consultation-form.html">Consultation</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="subnav" aria-label="Secondary navigation">
+        <div class="container subnav-inner">
+            <button class="subnav-toggle" aria-expanded="false" aria-controls="subnav-list">Menu</button>
+            <div id="subnav-list" class="subnav-list">
+                <a class="subnav-link" data-anchor="services" href="#">Services</a>
+                <a class="subnav-link" data-anchor="testimonials" href="#">Testimonials</a>
+                <a class="subnav-link" data-anchor="team" href="#">Team</a>
+                <a class="subnav-link" data-anchor="pricing" href="#">Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Anchor placeholders for site-wide subnav -->
+    <div id="services" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+    <div id="testimonials" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+    <div id="team" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+    <div id="pricing" tabindex="-1" style="position:relative;left:0;top:0;height:1px;overflow:hidden"></div>
+
+    <section class="hero" id="main-content" role="main">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <h1>Dog Owner Resources</h1>
+                    <p class="hero-subtitle">Dogs are natural carnivores and thrive on high-quality protein sources. A balanced diet is essential for maintaining their health, energy, and longevity.</p>
+                    <div class="hero-actions">
+                        <a href="consultation-form.html" class="btn">Schedule Consultation</a>
+                    </div>
+                </div>
+                    <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-illustration" style="background-image: url('assets/images/dog.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dog Owners Content -->
+    <section class="pet-owners-content">
+        <div class="container">
+            <img src="assets/images/dog.jpg" alt="Happy dog" class="content-image">
+
+            <div class="content-section bg-white rounded-lg p-8 shadow-lg">
+                <h2>Diet & Exercise</h2>
+                <p>Dogs are natural carnivores and thrive on high-quality protein sources. A balanced diet is essential for maintaining their health, energy, and longevity.</p>
+                <h3>Nutritional Guidelines:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Feed age-appropriate food (puppy, adult, or senior formulas)</li>
+                    <li>Provide clean, fresh water at all times</li>
+                    <li>Avoid toxic foods: chocolate, grapes, onions, xylitol, and macadamia nuts</li>
+                    <li>Maintain consistent feeding schedules (2-3 meals daily for most adult dogs)</li>
+                    <li>Monitor portion sizes to prevent obesity</li>
+                </ul>
+                <h3>Exercise Requirements:</h3>
+                <ul class="list-disc ml-6 mb-4">
+                    <li>Provide at least 30-60 minutes of daily exercise</li>
+                    <li>Adjust intensity based on breed, age, and health status</li>
+                    <li>Include mental stimulation through puzzle toys and training</li>
+                    <li>Regular walks, playtime, and socialization opportunities</li>
+                </ul>
+            </div>
+
+            <div class="content-section bg-white rounded-lg p-8 shadow-lg">
+                <h2>Grooming & Handling</h2>
+                <p>Regular grooming keeps your dog comfortable, healthy, and looking their best. It's also an excellent opportunity to check for any health issues.</p>
+                <h3>Grooming Essentials:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Brush regularly based on coat type (daily for long coats, weekly for short coats)</li>
+                    <li>Bathe as needed, typically every 4-6 weeks or when dirty</li>
+                    <li>Trim nails every 3-4 weeks to prevent discomfort and injury</li>
+                    <li>Clean ears weekly to prevent infections</li>
+                    <li>Brush teeth daily to maintain dental health</li>
+                    <li>Check for fleas, ticks, and skin abnormalities during grooming sessions</li>
+                </ul>
+            </div>
+
+            <div class="content-section bg-white rounded-lg p-8 shadow-lg">
+                <h2>Vaccinations & Medications</h2>
+                <p>Preventive care is crucial for protecting your dog from serious diseases. Work with your veterinarian to establish a vaccination and medication schedule.</p>
+                <h3>Core Vaccinations:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Rabies - Required by law in most areas</li>
+                    <li>Distemper (DHPP) - Protects against multiple serious diseases</li>
+                    <li>Parvovirus - Highly contagious and potentially fatal</li>
+                    <li>Adenovirus - Protects against hepatitis and respiratory disease</li>
+                </ul>
+                <h3>Preventive Medications:</h3>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Heartworm prevention (monthly medication)</li>
+                    <li>Flea and tick control (monthly or quarterly applications)</li>
+                    <li>Intestinal parasite prevention</li>
+                    <li>Annual health screenings and blood work</li>
+                </ul>
+                <p><strong>Note:</strong> Always consult with your veterinarian before starting any new medications or supplements. They can provide personalized recommendations based on your dog's specific needs.</p>
+            </div>
+
+            <section class="rounded-lg p-8 cta-section cta-section--dark">
+                <h2 class="text-3xl mb-4">Have Questions About Your Dog's Care?</h2>
+                <p class="mb-6">Our dog care specialists are here to help! Schedule a consultation to discuss nutrition, behavior, training, or any concerns you may have about your canine companion.</p>
+                <a href="consultation-form.html" class="btn">Schedule a Consultation</a>
+            </section>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">Paradigm Pet Professional</a>
+                <p class="legal">© 2025 Paradigm Pet Professional. All rights reserved.</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p class="contact-line">Email: hello@paradigmpetprofessional.example</p>
+                <p class="contact-line">Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
